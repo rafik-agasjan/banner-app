@@ -1,0 +1,12 @@
+{
+    "text": "Tekst",
+    "textColor": "Teksti värv",
+    "textSize": "Teksti suurus",
+    "textWeight": "Teksti paksus",
+    "backgroundType": "Tausta tüüp",
+    "backgroundColor": "Tausta värv",
+    "backgroundImage": "Tausta pilt",
+    "position": "Asukoht",
+    "backgroundImageSize": "Tausta pildi suurus",
+    "backgroundImageRepeat": "Tausta pildi kordamine"
+}
