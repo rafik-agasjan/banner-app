@@ -1,6 +1,6 @@
 "use client";
 
-import TextBanner from "../TextBanner";
+import TextBanner from '@/components/TextBanner/TextBanner';
 
 const Desc: React.FC<{
     isProps: any;
@@ -10,7 +10,7 @@ const Desc: React.FC<{
   return (
     <div className={styles.rightBox}>
 
-      <TextBanner isProps={isProps} />
+      <TextBanner data={isProps} />
 
     </div>
   );
