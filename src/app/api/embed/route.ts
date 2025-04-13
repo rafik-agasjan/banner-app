@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { textBanner } from "@/store/data/textBanner";
-import { renderHTML } from "@/components/TextBanner/renderHTML";
+import { textBanner, textBannerHTML } from "@/store/data/textBanner";
+
 
 // OPTIONS request for CORS
 export async function OPTIONS() {
@@ -31,7 +31,7 @@ export async function POST(req: NextRequest) {
 	// Renderdame lihtsalt Server Componenti
 	const html = `
       <div id="my-embedded-component">
-        ${renderHTML(props)}
+        ${textBannerHTML(props)}
       </div>
     `;
 
