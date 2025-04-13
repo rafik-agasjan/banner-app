@@ -33,7 +33,7 @@
 .leftBox {
 	width: 28%;
 	height: 100%;
-	padding: 8px;
+	padding: 8px 8px 0px 8px;
 	box-shadow:
 		0 0 0 1px var(--gray-alpha-200),
 		0 0 0 1px var(--gray-alpha-100);
@@ -188,6 +188,34 @@
 	height: fit-content;
 	background-color: var(--geist-background);
 	border-radius: 4px;
+}
+
+.objectHandler {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 16px;
+	flex-wrap: wrap;
+	padding: 0px 12px 8px 12px;
+	border-radius: 4px;
+	background-color: var(--geist-background);
+	color: var(--geist-foreground);
+	box-shadow:
+		0 0 0 1px var(--gray-alpha-200),
+		0 0 0 1px var(--gray-alpha-100);
+	overflow: auto;
+}
+
+.objectHandlerTitle {
+	width: calc(100% + 32px);
+	margin: 0 -12px 0 -12px;
+	font-size: 14px;
+	font-weight: 600;
+	background-color: #383838;
+	padding: 8px 0px 8px 16px;
+	border-radius: 4px 4px 0 0;
+	text-transform: uppercase;
 }
 
 @media (prefers-color-scheme: dark) {

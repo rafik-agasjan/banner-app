@@ -1,14 +1,23 @@
 "use client";
 
-import TextBanner from "@/components/TextBanner/TextBanner";
+import { useObjects } from "@/store/contexts/ObjectsContext";
+import TextBanner from "@/components/banners/TextBanner";
+import LinkBanner from "@/components/banners/LinkBanner";
 
 const Desc: React.FC<{
-	isProps: any;
 	styles: any;
-}> = ({ isProps, styles }) => {
+}> = ({ styles }) => {
+
+	const { _o } = useObjects();
+
+
 	return (
 		<div className={styles.rightBox}>
-			<TextBanner data={isProps} />
+			{_o.focus === "textBanner" ? <TextBanner /> :
+				_o.focus === "linkBanner" ? <LinkBanner /> :
+				null
+			}
+			
 		</div>
 	);
 };

@@ -8,5 +8,10 @@
 	"backgroundImage": "Tausta pilt",
 	"position": "Asukoht",
 	"backgroundImageSize": "Tausta pildi suurus",
-	"backgroundImageRepeat": "Tausta pildi kordamine"
+	"backgroundImageRepeat": "Tausta pildi kordamine",
+
+	"assortment": "Sortiment",
+	"href": "Link",
+	"textBanner": "Teksti bänner",
+	"linkBanner": "Lingiga bänner"
 }
