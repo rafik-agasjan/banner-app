@@ -1,5 +1,5 @@
 export const renderHTML = (data: any) => {
-    return `
+	return `
         <div
             style="
                 width: 100%;
@@ -29,4 +29,4 @@ export const renderHTML = (data: any) => {
             </div>
         </div>
     `;
-}
+};

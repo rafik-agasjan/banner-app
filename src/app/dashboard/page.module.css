@@ -1,202 +1,218 @@
 .layout {
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
+	--gray-rgb: 0, 0, 0;
+	--gray-alpha-200: rgba(var(--gray-rgb), 0.08);
+	--gray-alpha-100: rgba(var(--gray-rgb), 0.05);
 
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
+	--button-primary-hover: #383838;
+	--button-secondary-hover: #f2f2f2;
 
-  align-items: center;
-  justify-items: center;
-  min-height: 100svh;
-  padding: 16px;
-  gap: 64px;
-  font-family: var(--font-geist-sans);
+	align-items: center;
+	justify-items: center;
+	min-height: 100svh;
+	padding: 16px;
+	gap: 64px;
+	font-family: var(--font-geist-sans);
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  max-width: 1200px;
-  height: calc(100dvh - 32px);
-  padding: 0;
-  margin: auto;
-  border-radius: 8px;
-  background-color: var(--geist-background);
-  backdrop-filter: blur(10px);
-  gap: 16px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	max-width: 1200px;
+	height: calc(100dvh - 32px);
+	padding: 0;
+	margin: auto;
+	border-radius: 8px;
+	background-color: var(--geist-background);
+	backdrop-filter: blur(10px);
+	gap: 16px;
 }
 
 .leftBox {
-  width: 28%;
-  height: 100%;
-  padding: 8px;
-  box-shadow: 0 0 0 1px var(--gray-alpha-200), 0 0 0 1px var(--gray-alpha-100);
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+	width: 28%;
+	height: 100%;
+	padding: 8px;
+	box-shadow:
+		0 0 0 1px var(--gray-alpha-200),
+		0 0 0 1px var(--gray-alpha-100);
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
 }
 
 .rightBox {
-  width: 72%;
-  height: 100%;
-  box-shadow: 0 0 0 1px var(--gray-alpha-200), 0 0 0 1px var(--gray-alpha-100);
-  border-radius: 8px;
-  position: relative;
+	width: 72%;
+	height: 100%;
+	box-shadow:
+		0 0 0 1px var(--gray-alpha-200),
+		0 0 0 1px var(--gray-alpha-100);
+	border-radius: 8px;
+	position: relative;
 }
 
 .inputBox {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 8px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 8px;
 }
 
 .label {
-  font-size: 12px;
-  font-weight: 400;
-  color: var(--geist-foreground);
-  margin-bottom: 4px;
+	font-size: 12px;
+	font-weight: 400;
+	color: var(--geist-foreground);
+	margin-bottom: 4px;
 }
 
 .input {
-  width: 100%;
-  padding: 8px;
-  border-radius: 4px;
-  background-color: var(--geist-background);
-  color: var(--geist-foreground);
-  border: none;
-  box-shadow: 0 0 0 1px var(--gray-alpha-200), 0 0 0 1px var(--gray-alpha-100);
-  cursor: pointer;
+	width: 100%;
+	padding: 8px;
+	border-radius: 4px;
+	background-color: var(--geist-background);
+	color: var(--geist-foreground);
+	border: none;
+	box-shadow:
+		0 0 0 1px var(--gray-alpha-200),
+		0 0 0 1px var(--gray-alpha-100);
+	cursor: pointer;
 }
 .input:focus {
-  outline: none;
-  box-shadow: 0 0 0 1px red, 0 0 0 1px var(--gray-alpha-100);
+	outline: none;
+	box-shadow:
+		0 0 0 1px red,
+		0 0 0 1px var(--gray-alpha-100);
 }
 
 .inputNumber {
-  width: 20%;
-  padding: 4px;
-  border-radius: 2px;
-  margin-left: 16px;
-  background-color: var(--geist-background);
-  color: var(--geist-foreground);
-  border: none;
-  box-shadow: 0 0 0 1px var(--gray-alpha-200), 0 0 0 1px var(--gray-alpha-100);
-  cursor: pointer;
+	width: 20%;
+	padding: 4px;
+	border-radius: 2px;
+	margin-left: 16px;
+	background-color: var(--geist-background);
+	color: var(--geist-foreground);
+	border: none;
+	box-shadow:
+		0 0 0 1px var(--gray-alpha-200),
+		0 0 0 1px var(--gray-alpha-100);
+	cursor: pointer;
 }
 .inputNumber:focus {
-  outline: none;
-  box-shadow: 0 0 0 1px red, 0 0 0 1px var(--gray-alpha-100);
+	outline: none;
+	box-shadow:
+		0 0 0 1px red,
+		0 0 0 1px var(--gray-alpha-100);
 }
-
 
 .textarea {
-  width: 100%;
-  padding: 8px;
-  border-radius: 4px;
-  background-color: var(--geist-background);
-  color: var(--geist-foreground);
-  border: none;
-  box-shadow: 0 0 0 1px var(--gray-alpha-200), 0 0 0 1px var(--gray-alpha-100);
-  cursor: pointer;
+	width: 100%;
+	padding: 8px;
+	border-radius: 4px;
+	background-color: var(--geist-background);
+	color: var(--geist-foreground);
+	border: none;
+	box-shadow:
+		0 0 0 1px var(--gray-alpha-200),
+		0 0 0 1px var(--gray-alpha-100);
+	cursor: pointer;
 }
 .textarea:focus {
-  outline: none;
-  box-shadow: 0 0 0 1px red, 0 0 0 1px var(--gray-alpha-100);
+	outline: none;
+	box-shadow:
+		0 0 0 1px red,
+		0 0 0 1px var(--gray-alpha-100);
 }
 
 .select {
-  width: 100%;
-  padding: 8px;
-  border-radius: 4px;
-  background-color: var(--geist-background);
-  color: var(--geist-foreground);
-  border: none;
-  box-shadow: 0 0 0 1px var(--gray-alpha-200), 0 0 0 1px var(--gray-alpha-100);
-  cursor: pointer;
+	width: 100%;
+	padding: 8px;
+	border-radius: 4px;
+	background-color: var(--geist-background);
+	color: var(--geist-foreground);
+	border: none;
+	box-shadow:
+		0 0 0 1px var(--gray-alpha-200),
+		0 0 0 1px var(--gray-alpha-100);
+	cursor: pointer;
 }
 .select:focus {
-  outline: none;
-  box-shadow: 0 0 0 1px red, 0 0 0 1px var(--gray-alpha-100);
+	outline: none;
+	box-shadow:
+		0 0 0 1px red,
+		0 0 0 1px var(--gray-alpha-100);
 }
 
 .option {
-  padding: 8px;
-  background-color: var(--geist-background);
-  color: black;
-  cursor: pointer;
+	padding: 8px;
+	background-color: var(--geist-background);
+	color: black;
+	cursor: pointer;
 }
 .option:hover {
-  color: var(--geist-foreground);
-  background-color: var(--geist-hover);
+	color: var(--geist-foreground);
+	background-color: var(--geist-hover);
 }
 .option:active {
-  background-color: var(--geist-active);
+	background-color: var(--geist-active);
 }
 
 .colorPicker {
-  width: fit-content;
-  position: relative;
+	width: fit-content;
+	position: relative;
 }
 .colorPickerPrompt {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  cursor: pointer;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	cursor: pointer;
 }
 .colorBox {
-  width: 20px;
-  height: 20px;
-  border-radius: 2px;
-  margin: 0 8px 0 16px;
+	width: 20px;
+	height: 20px;
+	border-radius: 2px;
+	margin: 0 8px 0 16px;
 }
 .colorText {
-  font-size: 14px;
-  font-weight: 400;
-  color: var(--geist-foreground);
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--geist-foreground);
 }
 .colorPickerBox {
-  position: absolute;
-  z-index: 1;
-  top: 100%;
-  left: 55px;
-  width: fit-content;
-  height: fit-content;
-  background-color: var(--geist-background);
-  border-radius: 4px;
+	position: absolute;
+	z-index: 1;
+	top: 100%;
+	left: 55px;
+	width: fit-content;
+	height: fit-content;
+	background-color: var(--geist-background);
+	border-radius: 4px;
 }
 
-
 @media (prefers-color-scheme: dark) {
-  .layout {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
+	.layout {
+		--gray-rgb: 255, 255, 255;
+		--gray-alpha-200: rgba(var(--gray-rgb), 0.145);
+		--gray-alpha-100: rgba(var(--gray-rgb), 0.06);
 
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
+		--button-primary-hover: #ccc;
+		--button-secondary-hover: #1a1a1a;
+	}
 }
 
 /* main css */
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
-
 }
 
 @media (max-width: 600px) {
-  .layout {
-    padding: 32px;
-    padding-bottom: 80px;
-  }
+	.layout {
+		padding: 32px;
+		padding-bottom: 80px;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
-
 }
